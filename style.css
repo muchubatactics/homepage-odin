@@ -62,7 +62,7 @@ body {
   right: 60vw;
   font-family: 'Playfair Display', serif;
   font-size: 4rem;
-  background-image: url(./assets/woman.jpg);
+  background-image: url(./assets/womanp.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -209,7 +209,7 @@ footer {
 }
 
 footer .photo {
-  background-image: url(./assets/tools.jpg);
+  background-image: url(./assets/toolm.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -445,7 +445,7 @@ footer .photo {
   }
 
   footer .photo {
-    background-image: url(./assets/tools.jpg);
+    background-image: url(./assets/toolm.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
