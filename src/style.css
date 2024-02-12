@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0px;
   padding: 0px;
   height: 100vh;
-  overflow-y: overlay;
 }
 
 :root {
@@ -26,7 +31,6 @@ body {
 
 .head {
   position: relative;
-  overflow-x: hidden;
 }
 
 .content {
@@ -196,4 +200,141 @@ footer .photo {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 8px;
+  }
+
+  .head {
+    height: 120vh;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .pfp {
+    width: 100%;
+    height: 100%;
+    position: static;
+    font-size: 5rem;
+  }
+
+  .about {
+    position: static;
+    font-size: 2.3rem;
+    box-shadow: 0px 0px 0px;
+    line-height: 1.4;
+    color: rgb(90, 90, 90);
+    background-color: transparent;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 4.5rem;
+  }
+
+  .about h3 {
+    margin-bottom: 1rem;
+    color: black;
+  }
+
+  .about .icons {
+    margin-top: 3rem;
+    justify-content: space-evenly;
+  }
+
+  .about .icons > i {
+    font-size: 5rem;
+    margin-left: 0px;
+  }
+  
+  section {
+    padding: 2rem;
+    padding-bottom: 7rem;
+  }
+
+  section > main {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+
+  .project > .preview {
+    font-size: 4rem;
+    padding: 9rem 9rem;
+  }
+
+  .project .title > div, .project .title i {
+    font-size: 3rem;
+  }
+  
+  .project article {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
+  footer .contact {
+    padding: 2rem;
+    background-color: rgb(0, 124, 173);
+    font-size: 2rem;
+  }
+
+  footer .contact h3 {
+    margin-bottom: 2rem;
+  }
+
+  footer .contact > div > div > span {
+    margin-right: 2rem;
+  }
+
+  footer .contact > div > div {
+    margin-bottom: 2rem;
+  }
+
+  footer .contact > div:last-child {
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0px;
+  }
+
+  footer .photo {
+    background-image: url(../assets/tools.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media only screen and (width < 300px) {
+  :root {
+    font-size: 6px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  section > main {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
 }
