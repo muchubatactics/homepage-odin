@@ -39,6 +39,7 @@ body {
 .head {
   position: relative;
   width: 100%;
+  background-color: white;
 }
 
 .content {
