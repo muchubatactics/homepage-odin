@@ -150,6 +150,50 @@ section > main {
   margin-bottom: 2.5rem;
 }
 
+footer .contact {
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+footer .contact .mail, footer .contact .call {
+  display: flex;
+  align-items: center;
+}
+
+footer .contact > div > div > span {
+  margin-right: 1rem;
+}
+
+footer .contact > div > div {
+  margin-bottom: 1rem;
+}
+
+footer .contact > div:last-child {
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 3.5rem);
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
 footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: rgb(0, 124, 173);
+  padding: 4rem;
+}
+
+footer .photo {
+  background-image: url(../assets/tools.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
